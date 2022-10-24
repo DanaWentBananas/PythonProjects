@@ -1,0 +1,18 @@
+____PART1:
+
+Q1: What are the data type and the range of the data types 
+    if you try to import a PNG file using matplotlib? 
+    How about with a JPG image?
+
+A1: 
+    JPG image data type: uint8
+    JPG image range: 0 - 255
+    PNG image data type: float32 
+    PNG image range: 0 - 1
+
+Q2: If the data type of the image data was not of the uint8 type,
+    how did you convert that?
+
+A2: By multiplying each pixel by 255 and rounding it.
+
+
