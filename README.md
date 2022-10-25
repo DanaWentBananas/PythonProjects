@@ -1,2 +1,0 @@
-# PythonProjects
-random python projects
