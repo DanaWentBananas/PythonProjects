@@ -95,6 +95,8 @@ def play():
         print("You earned a total of "+str(points)+" points and made it into the Hall of Fame!")
         halloffame[points]=name
         halloffame = sort(halloffame)
+        if len(halloffame)>6:
+            halloffame.popitem()
         f = open("halloffame.json","w")
         json.dump(halloffame,f)
         f.close()
@@ -106,6 +108,8 @@ def play():
                 print("You earned a total of "+str(points)+" points and made it into the Hall of Fame!")
                 halloffame[points]=name
                 halloffame = sort(halloffame)
+                if len(halloffame)>6:
+                    halloffame.popitem()
                 f = open("halloffame.json","w")
                 json.dump(halloffame,f)
                 f.close()
@@ -128,6 +132,6 @@ def show():
 
 def sort(halloffame):
     halloffame = {int(k):v for k,v in halloffame.items()}
-    halloffame = dict(sorted(halloffame.items()))
+    halloffame = dict(sorted(halloffame.items(), reverse=True))
     halloffame = {k:v for k,v in halloffame.items()}
     return halloffame
