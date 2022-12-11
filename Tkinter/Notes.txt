@@ -1,0 +1,26 @@
+tk developed in 90s as an extension of tcl
+it runs on windows, mac, and unix/linux
+
+app > tkinter package > __tkinter (c) > tk widgets (c & tcl) > xlib (c)
+
+
+widgets are the containers [ each is a class ]
+
+heirarchy of tkinter:
+	-Root (window) 
+
+Three geometry managers:
+	-Pack geometry manager
+	-Grig geometry manager
+	-Place geometry manager
+
+Two ways of handling events:
+	-Command callbacks (for interactive widgets)
+	-Event bindings (for  widgets such as labels)
+
+
+Tkinter variable classes
+	-BooleanVar
+	-DoubleVar
+	-IntVar
+	-StringVar
